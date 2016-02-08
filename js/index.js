@@ -37,9 +37,16 @@ function wideSearch() {
     var form = document.createElement("div");
     form.id = "formForSearch";
     form.innerHTML = '<form><input type="search" value="Search something..."><div type="submit" class="icon"><i class="fa fa-search"></i></div></form>';
-    $('.headerButtons').after($(form));
+    $('#search').after($(form));
     $('#search').remove();
     $('.firstHr').attr('id', 'firstHr');
+}
 
-
+function checkScreenWidth() {
+    if (screen.width >= 768) {
+        //var menu = document.getElementById('menu');
+        $('.firstHr').remove();
+        //$('#menu').remove();
+        //$('#search').after($(menu));
+    }
 }

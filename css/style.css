@@ -106,7 +106,7 @@ a {
     font-size: 18px;
 }
 
-nav#menu div {
+div#menu div {
     display: block;
     margin: 0 0 35px 0;
 }
@@ -162,6 +162,7 @@ hr {
     margin: 0;
     padding: 8px 0;
     min-width: 300px;
+    clear: left;
 
 }
 
@@ -402,13 +403,76 @@ div#signup + div#slider {
     #formForEmail form input[type="email"] {
         min-width: 450px;
     }
+
+    #formForSearch{
+        float:right;
+        width:200px;
+        margin-top:10px;
+    }
+    #formForSearch form input[type="search"] {
+
+        min-width: inherit;
+    }
 }
 
 @media only screen and (min-width: 768px) {
-    #firstHr {
-        visibility: hidden;
+
+    div#menu div {
+        display: inline-block;
+        margin-top: 10px;
+        margin-right: 50px;
+
     }
 
+    #menu {
+        text-align: start;
+        margin-left: 100px;
+    }
+
+
+    a {
+        font-size: 15px;
+    }
+
+    #wrapper {
+        margin: 31px;
+    }
+
+    .headerLogo {
+        width: 40px;
+        height: 42px;
+        float: left;
+
+    }
+
+    #bag i {
+        font-size: 20px;
+    }
+
+    #bag {
+        margin-top: 13px;
+        float: right;
+        margin-right: 52px;
+        color: #303030;
+    }
+
+    #search {
+        margin-right: 26px;
+        margin-top: 5px;
+    }
+
+    #search i {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    #bag span {
+        font-size: 15px;
+    }
+
+    .headerButtons + hr{
+
+    }
 }
 
 @media only screen and (min-width: 1024px) {
