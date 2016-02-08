@@ -42,11 +42,19 @@ function wideSearch() {
     $('.firstHr').attr('id', 'firstHr');
 }
 
+
 function checkScreenWidth() {
-    if (screen.width >= 768) {
-        //var menu = document.getElementById('menu');
-        $('.firstHr').remove();
-        //$('#menu').remove();
-        //$('#search').after($(menu));
+
+    if (document.documentElement.clientWidth >= 1024) {
+
+    } else {
+
     }
+
 }
+
+$(document).ready(function () {
+    $(window).resize(function () {
+        checkScreenWidth();
+    });
+});

@@ -216,7 +216,7 @@ hr {
 }
 
 /**gallery*/
-.g {
+.gallery {
     font-size: 0;
     line-height: 0;
 }
@@ -225,7 +225,7 @@ ul {
     -webkit-padding-start: 0;
 }
 
-.g li {
+.gallery li {
     display: inline-block;
     font-size: 0;
     margin: auto;
@@ -234,7 +234,7 @@ ul {
     background-color: #606060;
 }
 
-.g li a {
+.gallery li a {
     font-size: 0;
     line-height: 0;
     margin: 0;
@@ -257,7 +257,7 @@ ul {
     height: 277px;
 }
 
-div.g + div#signup {
+div.gallery + div#signup {
     margin-top: 80px;
 }
 
@@ -370,14 +370,12 @@ div#signup + div#slider {
     vertical-align: middle;
 }
 
-/* For mobile phones: */
-
-@media only screen and (min-width: 415px) {
+@media only screen and (min-width: 768px) {
     #title p {
         width: auto;
     }
 
-    .g li {
+    .gallery li {
         margin: auto;
         width: 500px;
         padding: 0;
@@ -404,31 +402,32 @@ div#signup + div#slider {
         min-width: 450px;
     }
 
-    #formForSearch{
-        float:right;
-        width:200px;
-        margin-top:10px;
+    #formForSearch {
+        float: right;
+        width: 200px;
+        margin-top: 10px;
     }
+
     #formForSearch form input[type="search"] {
 
         min-width: inherit;
     }
+
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
 
     div#menu div {
         display: inline-block;
         margin-top: 10px;
         margin-right: 50px;
-
+        margin-bottom: 50px;
     }
 
     #menu {
         text-align: start;
         margin-left: 100px;
     }
-
 
     a {
         font-size: 15px;
@@ -470,8 +469,66 @@ div#signup + div#slider {
         font-size: 15px;
     }
 
-    .headerButtons + hr{
+    .firstHr {
+        display: none;
+    }
 
+    .whiteButton {
+        border: 1px #e5e5e5 solid;
+        width: 230px;
+        height: 58px;
+        text-transform: uppercase;
+        margin: auto;
+        text-align: center;
+        top: 50%;
+    }
+
+    .firstHr {
+        padding: 0;
+    }
+
+    .headerLogo {
+        margin-bottom: 0;
+    }
+
+    #title p + .whiteButton {
+        margin-top: 70px;
+    }
+
+    #header + #title {
+        margin-top: 118px;
+    }
+
+    div#title + div.content {
+        margin-top: 130px;
+    }
+
+    .gallery li {
+        width: 244px;
+        height: 244px;
+        display: inline-block;
+    }
+
+    .Table {
+        display: table;
+    }
+
+    .Heading {
+        display: table-row;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .Row {
+        display: table-row;
+    }
+
+    .Cell {
+        display: table-cell;
+        border: solid;
+        border-width: thin;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 }
 
