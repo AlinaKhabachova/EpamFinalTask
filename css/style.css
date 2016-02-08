@@ -49,6 +49,7 @@ h2 {
     color: #606060;
     font-style: italic;
     line-height: 1.45;
+    letter-spacing: 1.16px;
 }
 
 .subheader2 {
@@ -124,7 +125,7 @@ a:hover {
 
 #formForSearch {
     width: 391px;
-    margin-top:-5px
+    margin-top: -5px
 }
 
 #formForSearch form input[type="search"] {
@@ -141,7 +142,7 @@ a:hover {
     outline: none;
 }
 
-#formForSearch form div[type="submit"]{
+#formForSearch form div[type="submit"] {
     font-size: 18px;
     color: white;
     text-align: center;
@@ -165,10 +166,10 @@ hr {
 }
 
 #firstHr {
-    border-top:none;
-    height:9px;
+    border-top: none;
+    height: 9px;
     border-bottom: 1px #e5e5e5 solid;
-    margin-bottom:19px;
+    margin-bottom: 19px;
 
 }
 
@@ -190,15 +191,12 @@ hr {
 }
 
 #title h1 {
-    display: inline-block;
-    margin: 20px 15px 0 0;
-    padding: 0;
+    margin-top: 20px;
 }
 
 #title p {
-    display: inline-block;
     text-align: center;
-    width: 350px;
+    width: auto;
     margin: 0;
     padding: 0;
 
@@ -222,10 +220,14 @@ hr {
     line-height: 0;
 }
 
+ul {
+    -webkit-padding-start: 0;
+}
+
 .g li {
     display: inline-block;
     font-size: 0;
-    margin: 0 0 0 -40px;
+    margin: auto;
     padding: 0;
     width: 375px;
     background-color: #606060;
@@ -268,6 +270,7 @@ div#signup h2 + p {
 
 #formForEmail {
     width: 391px;
+    margin: auto;
 }
 
 #formForEmail form input[type="email"] {
@@ -322,7 +325,7 @@ div#signup + div#slider {
     background: #ccc;
 }
 
-#prev #next{
+#prev #next {
     height: 120px;
     width: 10px;
     background-color: #f68236;
@@ -350,12 +353,11 @@ div#signup + div#slider {
 
 #social {
     margin-top: 32px;
-    margin-left: 116px;
     color: #606060;
 }
 
 .social {
-    float: left;
+    display: inline-block;
     margin-right: 15px;
 }
 
@@ -368,23 +370,48 @@ div#signup + div#slider {
 }
 
 /* For mobile phones: */
-[class*="col-"] {
-    /* width: 100%;*/
-}
 
-@media only screen and (min-width: 414px) {
+@media only screen and (min-width: 415px) {
+    #title p {
+        width: auto;
+    }
 
+    .g li {
+        margin: auto;
+        width: 500px;
+        padding: 0;
+        display: block;
+    }
+
+    h2 {
+        font-size: 34px;
+        letter-spacing: 2.9px;
+
+    }
+
+    .subheader2 {
+        font-size: 19px;
+        line-height: 1.45;
+    }
+
+    #formForEmail {
+        width: 570px;
+        margin: auto;
+    }
+
+    #formForEmail form input[type="email"] {
+        min-width: 450px;
+    }
 }
 
 @media only screen and (min-width: 768px) {
+    #firstHr {
+        visibility: hidden;
+    }
 
 }
 
 @media only screen and (min-width: 1024px) {
-
-}
-
-@media only screen and (min-width: 1440px) {
 
 }
 
