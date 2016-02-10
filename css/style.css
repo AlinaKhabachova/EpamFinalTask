@@ -18,7 +18,10 @@ body {
     margin: 0;
     padding: 0;
     min-width: 350px;
+    background-color: #e5e5e5;
 }
+
+
 
 h1 {
     color: #303030;
@@ -77,6 +80,10 @@ a {
     line-height: 1;
     text-decoration: none;
     color: #303030;
+}
+
+.whiteButton {
+    display: none;
 }
 
 #bag {
@@ -178,8 +185,12 @@ hr {
 }
 
 #wrapper {
-    margin: 20px;
-    padding: 0;
+    margin: auto;
+    padding: 20px;
+}
+
+#wrapper, .footer {
+    background-color: white;
 }
 
 .headerLogo {
@@ -218,6 +229,10 @@ hr {
     margin: 20px;
 }
 
+.footerFloat {
+    display: none;
+}
+
 /**gallery*/
 .gallery {
     font-size: 0;
@@ -230,7 +245,7 @@ ul {
 }
 
 .gallery li {
-    display: inline-block;
+    display: block;
     font-size: 0;
     margin: auto;
     padding: 0;
@@ -337,14 +352,13 @@ div#signup + div#slider {
     z-index: 10;
 }
 
-.content hr {
-    margin-top: 3px;
-}
+
 
 .footer {
     text-align: center;
     font-size: 18px;
     padding-bottom: 50px;
+    padding-top:6px;
 }
 
 .footer h2 {
@@ -352,8 +366,8 @@ div#signup + div#slider {
     margin-bottom: 45px;
 }
 
-#wrapper + .footer {
-    margin-top: 28px;
+.content + .wrapForFooter {
+    margin-top: 3px;
 }
 
 #social {
@@ -419,6 +433,30 @@ div#signup + div#slider {
 
 }
 
+/*category-all*/
+
+.breadcrumb {
+    text-transform: uppercase;
+    font-size: 17px;
+    text-align: center;
+}
+
+.breadcrumb a {
+    font-size:17px;
+
+}
+
+#header + .breadcrumb {
+
+    margin-top: 13px
+}
+
+.breadcrumb + h2 {
+    margin-top: 40px;
+}
+
+
+
 @media only screen and (min-width: 1024px) {
 
     div#menu div {
@@ -438,7 +476,9 @@ div#signup + div#slider {
     }
 
     #wrapper {
-        margin: 31px;
+        padding:31px;
+        margin: auto;
+        width: 1024px;
     }
 
     .headerLogo {
@@ -478,6 +518,7 @@ div#signup + div#slider {
     }
 
     .whiteButton {
+        display: block;
         border: 1px #e5e5e5 solid;
         width: 230px;
         height: 58px;
@@ -507,38 +548,40 @@ div#signup + div#slider {
         margin-top: 130px;
     }
 
-    .gallery{
+    .gallery {
         width: 940px;
     }
+
     .gallery li {
         width: 235px;
         height: 235px;
         display: inline-block;
     }
 
-    div#wrapper + div.footer {
-        margin-top:45px;
+    div.content + div.wrapForFooter {
+        margin-top: 45px;
     }
 
     .footer {
-        margin:31px;
+        margin: 31px;
     }
+
     .footerFloat {
-        width: 15%;
-        float: left;
-        text-align:left;
-        padding-top:10px
 
+        width: 15%;display: block;
+        float: left;
+        text-align: left;
+        padding-top: 10px;
 
     }
 
-    .footerFloat ul li{
+    .footerFloat ul li {
+        display:block;
         list-style: none;
         font-size: 12px;
         line-height: 1;
         letter-spacing: 1px;
-        margin-bottom:11px;
-
+        margin-bottom: 11px;
 
     }
 
@@ -551,37 +594,39 @@ div#signup + div#slider {
         border-left: 2px solid #e5e5e5;
     }
 
-    #footerCollection{
-        margin-right:10.5%;
+    #footerCollection {
+        margin-right: 10.5%;
     }
 
-    #footerSite,  #footerShop {
-        margin-right:8.5%;
+    #footerSite, #footerShop {
+        margin-right: 8.5%;
 
     }
 
-
-    #footerSocial ul li{
+    #footerSocial ul li {
         letter-spacing: normal;
-        font-size:14px;
-        line-height:1.7;
+        font-size: 14px;
+        line-height: 1.7;
     }
 
-    #footerSocial ul{
-        width:250px;
+    #footerSocial ul {
+        width: 250px;
     }
 
     .social {
         margin-right: 1px;
-        margin-top:-40px;
+        margin-top: -40px;
+    }
+
+    .mobileFooter{
+        display: none;
+    }
+
+    .wrapForFooter hr{
+        display: none;
     }
 
 }
 
-@media only screen and (min-width: 1024px) {
-    #wrapper, footer {
-        width: 1024px;
-        margin: 0 auto;
-    }
-}
+
 
