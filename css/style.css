@@ -362,6 +362,8 @@ div#signup + div#slider {
     margin-bottom: 45px;
 }
 
+
+
 .content + .wrapForFooter {
     margin-top: 3px;
 }
@@ -382,67 +384,6 @@ div#signup + div#slider {
     height: 35px;
     text-align: center;
     vertical-align: middle;
-}
-
-@media only screen and (min-width: 768px) {
-    #title p {
-        width: auto;
-    }
-
-    .gallery li {
-        margin: auto;
-        width: 500px;
-        padding: 0;
-        display: block;
-    }
-
-    h2 {
-        font-size: 34px;
-        letter-spacing: 2.9px;
-
-    }
-
-    .subheader2 {
-        font-size: 19px;
-        line-height: 1.45;
-    }
-
-    #formForEmail {
-        width: 570px;
-        margin: auto;
-    }
-
-    #formForEmail form input[type="email"] {
-        min-width: 450px;
-    }
-
-    #formForSearch {
-        float: right;
-        width: 200px;
-        margin-top: 10px;
-    }
-
-    #formForSearch form input[type="search"] {
-
-        min-width: inherit;
-    }
-
-    #wrapper h2  {
-        margin-bottom: 80px;
-    }
-
-    .pictureOfClothes {
-        width: 222px;
-    }
-
-    .clothes {
-        width: 500px
-    }
-
-    .product{
-        width: 222px;
-
-    }
 }
 
 /*category-all*/
@@ -532,6 +473,84 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
     margin-top: 40px;
 }
 
+#forDesktopSlider{
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    #title p {
+        width: auto;
+    }
+
+    .gallery li {
+        margin: auto;
+        width: 500px;
+        padding: 0;
+        display: block;
+    }
+
+    h2 {
+        font-size: 34px;
+        letter-spacing: 2.9px;
+
+    }
+
+    .subheader2 {
+        font-size: 19px;
+        line-height: 1.45;
+    }
+
+    #formForEmail {
+        width: 570px;
+        margin: auto;
+    }
+
+    #formForEmail form input[type="email"] {
+        min-width: 450px;
+    }
+
+    #formForSearch {
+        float: right;
+        width: 200px;
+        margin-top: 10px;
+    }
+
+    #formForSearch form input[type="search"] {
+
+        min-width: inherit;
+    }
+
+    #wrapper h2 + .clothes {
+        margin-top: 80px;
+    }
+
+    .pictureOfClothes {
+        width: 222px;
+    }
+
+    .clothes {
+        width: 490px
+    }
+
+    .product {
+        width: 222px;
+
+    }
+
+    .clothes + hr {
+        margin-top: 72px
+    }
+
+    hr + h2 {
+        margin-top: 60px;
+    }
+
+    .clothes + .wrapForFooter {
+        margin-top: 75px;
+    }
+
+}
+
 @media only screen and (min-width: 1024px) {
 
     div#menu div {
@@ -553,7 +572,7 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
     #wrapper {
         padding: 31px;
         margin: auto;
-        width: 1024px;
+        width: 960px;
     }
 
     .headerLogo {
@@ -671,14 +690,15 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
     }
 
     #footerCollection {
-        margin-right: 10.5%;
+        margin-right: 11.5%;
+        margin-left:-28px;
+
     }
 
     #footerSite, #footerShop {
-        margin-right: 8.5%;
+        margin-right: 10%;
 
     }
-
     #footerSocial ul li {
         letter-spacing: normal;
         font-size: 14px;
@@ -704,7 +724,7 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
 
     /*gallery-all*/
     .clothes {
-        width: 1024px;
+        width: 960px;
         height: 300px;
     }
 
@@ -731,7 +751,7 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
 
     div.clothes .product:nth-child(1), div.clothes .product:nth-child(2) {
         float: left;
-        margin-right: 115px;
+        margin-right: 85px;
 
     }
 
@@ -746,6 +766,34 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
         display: inline-block;
     }
 
+    .pictureOfClothes {
+        width: 168px;
+    }
+
+    .product {
+
+        width: 170px;
+    }
+
+    .clothes + #forDesktopSlider {
+        margin-top: 65px;
+    }
+
+    hr + p {
+        text-align:center;
+        margin-top:30px;
+    }
+
+    p +#slider{
+        margin-top:45px;
+    }
+
+    #forDesktopSlider{
+        display: block;
+    }
+    #forDesktopSlider +.wrapForFooter{
+        margin-top: 110px;
+    }
 }
 
 
