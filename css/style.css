@@ -362,8 +362,6 @@ div#signup + div#slider {
     margin-bottom: 45px;
 }
 
-
-
 .content + .wrapForFooter {
     margin-top: 3px;
 }
@@ -473,8 +471,59 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
     margin-top: 40px;
 }
 
-#forDesktopSlider{
+#forDesktopSlider {
     display: none;
+}
+
+/*pdp*/
+
+#chosenProduct {
+    border: solid 1px black;
+    width: 350px;
+    height: 250px;
+    margin: auto;
+    padding-top: 70px;
+}
+
+.miniPicture {
+    border: solid 1px black;
+    width: 55px;
+    height: 55px;
+    float: right;
+    margin-left: 200px;
+    margin-bottom: 10px;
+}
+
+#chosenProduct + h2 {
+    margin-top: 20px
+}
+
+.articleNubmer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: #e5e5e5;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+
+}
+
+
+
+.price {
+    text-align: center;
+    margin-top: 45px;
+    font-size: 30px
+
+}
+
+.description {
+    margin-top:40px;
+    font-size: 18px;
+    font-family: "Lato", sans-serif;
+    color: #606060;
+    line-height: 1.5;
+    text-align: center;
 }
 
 @media only screen and (min-width: 768px) {
@@ -691,7 +740,7 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
 
     #footerCollection {
         margin-right: 11.5%;
-        margin-left:-28px;
+        margin-left: -28px;
 
     }
 
@@ -699,6 +748,7 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
         margin-right: 10%;
 
     }
+
     #footerSocial ul li {
         letter-spacing: normal;
         font-size: 14px;
@@ -780,18 +830,19 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
     }
 
     hr + p {
-        text-align:center;
-        margin-top:30px;
+        text-align: center;
+        margin-top: 30px;
     }
 
-    p +#slider{
-        margin-top:45px;
+    p + #slider {
+        margin-top: 45px;
     }
 
-    #forDesktopSlider{
+    #forDesktopSlider {
         display: block;
     }
-    #forDesktopSlider +.wrapForFooter{
+
+    #forDesktopSlider + .wrapForFooter {
         margin-top: 110px;
     }
 }
