@@ -21,8 +21,6 @@ body {
     background-color: #e5e5e5;
 }
 
-
-
 h1 {
     color: #303030;
     font-family: "Lato", sans-serif;
@@ -352,13 +350,11 @@ div#signup + div#slider {
     z-index: 10;
 }
 
-
-
 .footer {
     text-align: center;
     font-size: 18px;
     padding-bottom: 50px;
-    padding-top:6px;
+    padding-top: 6px;
 }
 
 .footer h2 {
@@ -431,6 +427,22 @@ div#signup + div#slider {
         min-width: inherit;
     }
 
+    #wrapper h2  {
+        margin-bottom: 80px;
+    }
+
+    .pictureOfClothes {
+        width: 222px;
+    }
+
+    .clothes {
+        width: 500px
+    }
+
+    .product{
+        width: 222px;
+
+    }
 }
 
 /*category-all*/
@@ -442,7 +454,7 @@ div#signup + div#slider {
 }
 
 .breadcrumb a {
-    font-size:17px;
+    font-size: 17px;
 
 }
 
@@ -455,7 +467,70 @@ div#signup + div#slider {
     margin-top: 40px;
 }
 
+.clothes {
+    margin: auto;
+    text-align: center;
+    width: 374px;
+    height: 660px;
+}
 
+.clothes + hr {
+    margin-top: 35px
+}
+
+hr + h2 {
+    margin-top: 15px;
+}
+
+div.clothes .product:nth-child(1), div.clothes .product:nth-child(3) {
+    float: left;
+}
+
+div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
+    float: right;
+}
+
+.product p {
+    margin-bottom: 20px;
+}
+
+.pictureOfClothes {
+    border: solid 1px #e5e5e5;
+    width: 168px;
+    height: 253px;
+}
+
+.product {
+    display: inline-block;
+    width: 170px;
+    text-transform: none;
+}
+
+#wrapper h2 + .clothes {
+    margin-top: 30px;
+}
+
+.product h3 {
+    text-transform: none;
+    letter-spacing: 1.3px;
+}
+
+.product p {
+    font-size: 16px;
+}
+
+.product h3 + p {
+    margin-top: 2px;
+
+}
+
+.pictureOfClothes + h3 {
+    margin-top: 20px
+}
+
+.clothes + .wrapForFooter {
+    margin-top: 40px;
+}
 
 @media only screen and (min-width: 1024px) {
 
@@ -476,7 +551,7 @@ div#signup + div#slider {
     }
 
     #wrapper {
-        padding:31px;
+        padding: 31px;
         margin: auto;
         width: 1024px;
     }
@@ -568,7 +643,8 @@ div#signup + div#slider {
 
     .footerFloat {
 
-        width: 15%;display: block;
+        width: 15%;
+        display: block;
         float: left;
         text-align: left;
         padding-top: 10px;
@@ -576,7 +652,7 @@ div#signup + div#slider {
     }
 
     .footerFloat ul li {
-        display:block;
+        display: block;
         list-style: none;
         font-size: 12px;
         line-height: 1;
@@ -618,12 +694,56 @@ div#signup + div#slider {
         margin-top: -40px;
     }
 
-    .mobileFooter{
+    .mobileFooter {
         display: none;
     }
 
-    .wrapForFooter hr{
+    .wrapForFooter hr {
         display: none;
+    }
+
+    /*gallery-all*/
+    .clothes {
+        width: 1024px;
+        height: 300px;
+    }
+
+    .breadcrumb a {
+        font-size: 12px;
+    }
+
+    .breadcrumb {
+        text-align: left;
+        font-size: 12px;
+    }
+
+    #header + .breadcrumb {
+        margin-top: 18px;
+    }
+
+    .breadcrumb + h2 {
+        margin-top: 45px;
+    }
+
+    #wrapper h2 + .clothes {
+        margin-top: 80px;
+    }
+
+    div.clothes .product:nth-child(1), div.clothes .product:nth-child(2) {
+        float: left;
+        margin-right: 115px;
+
+    }
+
+    div.clothes .product:nth-child(3) {
+        float: left;
+        margin-right: 57px;
+
+    }
+
+    div.clothes {
+        margin: 0;
+        display: inline-block;
     }
 
 }
