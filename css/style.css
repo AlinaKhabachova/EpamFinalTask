@@ -564,6 +564,41 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
 .wrapForFooter {
     margin-top: 120px;
 }
+/*basket*/
+
+.subheader2 + hr {
+    margin-top: 55px;
+}
+
+.pictureOfItem {
+    border: solid 1px #e5e5e5;
+    width:100px;
+    height:100px;
+    float:left;
+    margin-right:19px;
+}
+
+.deleteItem {
+    border: solid 1px #e5e5e5;
+    width:20px;
+    height:20px;
+    float:right;
+    margin-right:10px
+}
+
+.item h3{
+    letter-spacing:1px;
+
+
+}
+.sum {
+    text-align: right;
+    margin-bottom:20px;
+}
+
+#aggregateSum {
+    text-align: right;
+}
 
 /*thank you*/
 
@@ -796,8 +831,8 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
 
     .footer {
         margin: 0 20px;
-        height: 160px;
-        padding-top: 0px;
+        /*height: 160px;*/
+        padding-top: 0;
     }
 
     .footerFloat {
@@ -863,9 +898,13 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
         display: none;
     }
 
-    body {
-        background-color: white;
+    .cleaner {
+        clear: both;
     }
+
+    /*body {*/
+        /*background-color: white;*/
+    /*}*/
 
     /*gallery-all*/
     .clothes {
@@ -1023,5 +1062,24 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
     }
 }
 
+@media only screen and (min-width: 1440px) {
+    body {
+        background-color: #e5e5e5;
+    }
 
+    #wrapper {
+
+        width: 1180px;
+    }
+
+    .gallery {
+        width: 1150px;
+    }
+
+    .gallery li {
+        width: 295px;
+        height: 235px;
+        display: inline-block;
+    }
+}
 
