@@ -127,13 +127,10 @@ a:hover {
     text-decoration: underline;
 }
 
-#formForSearch {
-    width: 391px;
-}
 
 #formForSearch {
-    width: 391px;
-    margin-top: -5px
+    margin: -3px auto -5px auto ;
+    width: 360px;
 }
 
 #formForSearch form input[type="search"] {
@@ -142,7 +139,7 @@ a:hover {
     font-size: 11px;
     padding: 11px 10px;
     float: left;
-    min-width: 340px;
+    min-width: 318px;
 
 }
 
@@ -297,7 +294,7 @@ div#signup h2 + p {
     font-size: 11px;
     padding: 20px 10px;
     float: left;
-    min-width: 255px;
+    min-width: 238px;
 }
 
 #formForEmail form input[type="submit"] {
@@ -508,8 +505,6 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
 
 }
 
-
-
 .price {
     text-align: center;
     margin-top: 45px;
@@ -518,7 +513,7 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
 }
 
 .description {
-    margin-top:40px;
+    margin-top: 40px;
     font-size: 18px;
     font-family: "Lato", sans-serif;
     color: #606060;
@@ -527,44 +522,62 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
 }
 
 .description + h3 {
-    margin-top:38px;
-    text-align:center;
-    font-size:18px;
-
+    margin-top: 38px;
+    text-align: center;
+    font-size: 18px;
 
 }
 
 #sizes {
 
-    margin-top:40px;
-    text-align:center;
+    margin-top: 40px;
+    text-align: center;
 }
 
 .size {
-    border:solid 1px #e5e5e5;
-    padding:4px;
+    border: solid 1px #e5e5e5;
+    padding: 4px;
     width: 30px;
-    height:30px;
-    display:inline-block;
+    height: 30px;
+    display: inline-block;
     text-align: center;
     vertical-align: middle;
-    margin-right:10px;
+    margin-right: 10px;
 }
 
 #commonButton {
-    text-align:center;
-    padding:16px 0;
-    margin:auto;
+    text-align: center;
+    padding: 16px 0;
+    margin: auto;
     width: 357px;
     height: 28px;
     background-color: #f68236;
     color: white;
-    margin-top:40px;
-    font-size:19px
+    margin-top: 40px;
+    font-size: 19px
 }
 
 #commonButton + .wrapForFooter {
-    margin-top:120px;
+    margin-top: 120px;
+}
+
+.wrapForFooter {
+    margin-top: 120px;
+}
+
+/*thank you*/
+
+#orderSent {
+    margin-top: 35px;
+}
+
+#orderSent + p {
+    margin-top:30px;
+    text-align:center;
+}
+
+.subheader1 + .wrapForFooter {
+    margin-top:50px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -588,6 +601,11 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
     .subheader2 {
         font-size: 19px;
         line-height: 1.45;
+    }
+
+    #firstHr {
+        padding: 0;
+        height: 0;
     }
 
     #formForEmail {
@@ -662,6 +680,10 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
         width: 400px;
     }
 
+    .wrapForFooter {
+        margin-top: 120px;
+    }
+
 }
 
 @media only screen and (min-width: 1024px) {
@@ -685,7 +707,7 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
     #wrapper {
         padding: 31px;
         margin: auto;
-        width: 960px;
+        width: 946px;
     }
 
     .headerLogo {
@@ -702,7 +724,7 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
     #bag {
         margin-top: 13px;
         float: right;
-        margin-right: 52px;
+        margin-right: 20px;
         color: #303030;
     }
 
@@ -722,13 +744,16 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
 
     .firstHr {
         display: none;
+        padding: 0;
     }
 
     .whiteButton {
         display: block;
-        border: 1px #e5e5e5 solid;
+        border: 1px #606060 solid;
+        padding-top: 16px;
+        padding-bottom: 24px;
         width: 230px;
-        height: 58px;
+        height: 18px;
         text-transform: uppercase;
         margin: auto;
         text-align: center;
@@ -736,7 +761,7 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
     }
 
     .firstHr {
-        padding: 0;
+
     }
 
     .headerLogo {
@@ -770,7 +795,9 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
     }
 
     .footer {
-        margin: 31px;
+        margin: 0 20px;
+        height: 160px;
+        padding-top: 0px;
     }
 
     .footerFloat {
@@ -836,9 +863,13 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
         display: none;
     }
 
+    body {
+        background-color: white;
+    }
+
     /*gallery-all*/
     .clothes {
-        width: 960px;
+        width: 945px;
         height: 300px;
     }
 
@@ -913,7 +944,7 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
     /*pdp*/
     #chosenProduct {
 
-        width: 960px;
+        width: 945px;
         height: 365px;
 
         padding-top: 290px;
@@ -941,32 +972,54 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
     }
 
     .description {
-        margin:auto;
-        margin-top:25px;
+        margin: auto;
+        margin-top: 25px;
         font-size: 15px;
-        width:600px;
+        width: 600px;
     }
 
     .description + h3 {
-        margin-top:28px;
-        font-size:14px;
+        margin-top: 28px;
+        font-size: 14px;
     }
 
     #sizes {
-        margin-top:40px;
-        text-align:center;
+        margin-top: 40px;
+        text-align: center;
     }
 
     #commonButton {
-        padding:16px 0;
+        padding: 16px 0;
         width: 190px;
         height: 25px;
-        margin-top:40px;
-        font-size:14px;
+        margin-top: 40px;
+        font-size: 14px;
     }
 
-    #commonButton + #slider {
-        margin-top:130px;
+    #commonButton + #forDesktopSlider {
+        margin-top: 90px;
+    }
+
+    hr + #slider {
+        margin-top: 25px;
+    }
+
+    #forDesktopSlider + .wrapForFooter {
+        margin-top: 37px;
+    }
+
+    /*thank you*/
+    #orderSent {
+        margin-top: 185px;
+    }
+
+    #orderSent + p {
+        margin-top:30px;
+
+    }
+
+    .subheader1 + .wrapForFooter {
+        margin-top:235px;
     }
 }
 
