@@ -487,8 +487,6 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
     border: solid 1px black;
     width: 55px;
     height: 55px;
-    /*float: right;
-    margin-left: 200px;*/
     margin-bottom: 10px;
 }
 
@@ -1111,4 +1109,3 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
         display: inline-block;
     }
 }
-
