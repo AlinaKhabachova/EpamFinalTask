@@ -480,16 +480,28 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
     width: 350px;
     height: 250px;
     margin: auto;
-    text-align: center;
+    text-align: center;position: relative;
 }
 
 .miniPicture {
     border: solid 1px black;
     width: 55px;
     height: 55px;
-    float: right;
-    margin-left: 200px;
+    /*float: right;
+    margin-left: 200px;*/
     margin-bottom: 10px;
+}
+
+.productImage {
+    height: inherit;
+    width: inherit;
+    position: absolute;
+}
+
+.miniPictures {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
 }
 
 .crop-img{
@@ -559,7 +571,7 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
     margin-right: 10px;
 }
 
-#commonButton {
+.commonButton {
     text-align: center;
     padding: 16px 0;
     margin: auto;
@@ -571,7 +583,7 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
     font-size: 19px
 }
 
-#commonButton + .wrapForFooter {
+.commonButton + .wrapForFooter {
     margin-top: 120px;
 }
 
@@ -728,7 +740,7 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
         font-size: 16px;
     }
 
-    #commonButton {
+    .commonButton {
         width: 400px;
     }
 
@@ -1044,7 +1056,7 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
         text-align: center;
     }
 
-    #commonButton {
+    .commonButton {
         padding: 16px 0;
         width: 190px;
         height: 25px;
@@ -1052,7 +1064,7 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
         font-size: 14px;
     }
 
-    #commonButton + #forDesktopSlider {
+    .commonButton + #forDesktopSlider {
         margin-top: 90px;
     }
 
