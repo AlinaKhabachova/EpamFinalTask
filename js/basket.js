@@ -37,3 +37,22 @@ localStorage['basket'] = [
             count: 2
         }
     ];
+
+localStorage['data'] = [
+    {
+        ref : "2514/302",
+        collor: "black",
+        name: "name",
+        price: 20,
+        size: [32],
+        imgs : []
+    },
+    {
+        ref : "2514/302",
+        collor: "white",
+        name: "name 2",
+        price: 30,
+        size: 40,
+        count: 2
+    }
+];

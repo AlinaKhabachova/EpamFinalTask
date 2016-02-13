@@ -589,12 +589,11 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
     margin-top: 120px;
 }
 
-
-
 /*basket*/
 
 .subheader2 + hr {
     margin-top: 55px;
+    padding-bottom: 9px;
 }
 
 .pictureOfItem {
@@ -606,26 +605,73 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
 }
 
 .deleteItem {
-    border: solid 1px #e5e5e5;
-    width:20px;
-    height:20px;
     float:right;
-    margin-right:10px
+    margin-top: -2px;
+}
+
+.deleteItem i {
+    font-size: large;
 }
 
 .item h3{
     letter-spacing:1px;
-
-
 }
+
+.item h3 span {
+    text-transform: none;
+}
+
+.item h3 + p {
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+#colorOfItem, #sizeOfItem  {
+    line-height: 1.5;
+}
+
+.item form input {
+    outline: none;
+    border: none;
+    margin-left: 11px;
+    font-family: "Lato", sans-serif;
+    width: 30px;
+}
+
+.item form {
+    margin-top: 3px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    opacity: 1;
+}
+
 .sum {
     text-align: right;
-    margin-bottom:20px;
+    margin-bottom:19px;
 }
 
 #aggregateSum {
     text-align: right;
+    margin-top: -6px;
+    margin-bottom: 50px;
 }
+
+#aggregateSum span {
+    color: #f68236;
+}
+
+.commonButton + #continueShopping {
+    text-align: center;
+    margin-top: 25px;
+}
+
+#continueShopping + .wrapForFooter {
+    margin-top: 100px;
+}
+
+
 
 /*thank you*/
 
