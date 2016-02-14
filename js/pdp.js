@@ -7,12 +7,14 @@ $(document).ready(function () {
     } else {
         basket = JSON.parse((localStorage['basket']));
     }
+    var art = getURLParameter('art');
+    loadDataFromArt(art);
+
     $('.crop-img').click(function () {
         var img = $('#bigImage').attr('src');
         $('#bigImage').attr('src', $(this).attr('src'));
         $(this).attr('src', img);
     });
-
     $('#addToCard').click(function () {
         var selectedSize = $('.selectedSize').text();
         if (selectedSize != '') {
@@ -34,8 +36,6 @@ $(document).ready(function () {
             }
         }
     });
-    var art = getURLParameter('art');
-    loadDataFromArt(art);
 });
 
 function loadDataFromArt(art) {

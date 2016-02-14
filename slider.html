@@ -1,26 +1,30 @@
 <script>
+    var ul;
+    var li;
+    var currentShift;
+    var ulWidth;
     function initSlider() {
-        this.ul = $('.slider').children()[0];
-        this.li = this.ul.children;
+        ul = $('.slider').children()[0];
+        li = ul.children;
 
         // make <ul> as large as all <li>’s
-        this.ul.style.width = ((this.li[0].clientWidth + 2) * this.li.length) + 'px';
+        ulWidth = ((li[0].clientWidth + 2) * li.length);
+        ul.style.width = ulWidth + 'px';
 
-        this.currentShift = 0;
+        currentShift = 0;
     }
 
     function goTo(goToNext) {
-        var shift = this.currentShift + (this.li[0].clientWidth + 2) * (goToNext ? 1 : -1);
-        var ulWidth = $(this.ul).width();
+        var shift = currentShift + (li[0].clientWidth + 2) * (goToNext ? 1 : -1);
         var sliderWidth = $('.slider').width();
         if (sliderWidth + shift >= ulWidth) {
             shift = ulWidth - sliderWidth;
         } else if (shift < 0) {
             shift = 0;
         }
-        this.ul.style.left = '-' + shift + 'px';
+        ul.style.left = '-' + shift + 'px';
 
-        this.currentShift = shift;
+        currentShift = shift;
     }
 
 
@@ -39,10 +43,10 @@
         if (slider != undefined && ul != undefined) {
             var ulWidth = ul.width();
             var sliderWidth = slider.width();
-            if (this.currentShift + sliderWidth >= ulWidth) {
-                this.currentShift = ulWidth - sliderWidth;
+            if (currentShift + sliderWidth >= ulWidth) {
+                currentShift = ulWidth - sliderWidth;
             }
-            this.ul.style.left = '-' + this.currentShift + 'px';
+            ul.style.left = '-' + currentShift + 'px';
         }
     }
 </script>
