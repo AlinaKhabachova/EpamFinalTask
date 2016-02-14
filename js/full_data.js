@@ -5,8 +5,8 @@ var data =
         sub_category: 'coat',
         name: 'm coat 1',
         description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
-        price: 9200,
-        img: ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg'],
+        price: 33200,
+        img: ['img/img1.jpg', 'img/img9.jpg', 'img/img4.jpg', 'img/img2.jpg'],
         sizes: ['XS', 'S', 'M', 'L', 'XL']
     }, {
         art: 12345678903,
@@ -14,8 +14,8 @@ var data =
         sub_category: 'coat',
         name: 'm coat 2',
         description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
-        price: 9900,
-        img: ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg'],
+        price: 78100,
+        img: ['img/img5.jpg', 'img/img4.jpg', 'img/img8.jpg', 'img/img4.jpg'],
         sizes: ['XS', 'S', 'M', 'L', 'XL']
     }, {
         art: 12345678904,
@@ -23,8 +23,8 @@ var data =
         sub_category: 'coat',
         name: 'm coat 3',
         description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
-        price: 62000,
-        img: ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg'],
+        price: 39800,
+        img: ['img/img2.jpg', 'img/img9.jpg', 'img/img9.jpg', 'img/img6.jpg'],
         sizes: ['XS', 'S', 'M', 'L', 'XL']
     }, {
         art: 12345678905,
@@ -32,8 +32,8 @@ var data =
         sub_category: 'coat',
         name: 'm coat 4',
         description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
-        price: 91000,
-        img: ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg'],
+        price: 1100,
+        img: ['img/img1.jpg', 'img/img3.jpg', 'img/img4.jpg', 'img/img8.jpg'],
         sizes: ['XS', 'S', 'M', 'L', 'XL']
     }, {
         art: 12345678906,
@@ -41,8 +41,8 @@ var data =
         sub_category: 'outerwear',
         name: 'm outerwear 1',
         description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
-        price: 90400,
-        img: ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg'],
+        price: 39700,
+        img: ['img/img5.jpg', 'img/img4.jpg', 'img/img7.jpg', 'img/img2.jpg'],
         sizes: ['XS', 'S', 'M', 'L', 'XL']
     }, {
         art: 12345678907,
@@ -50,8 +50,8 @@ var data =
         sub_category: 'outerwear',
         name: 'm outerwear 2',
         description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
-        price: 99200,
-        img: ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg'],
+        price: 30000,
+        img: ['img/img9.jpg', 'img/img8.jpg', 'img/img9.jpg', 'img/img6.jpg'],
         sizes: ['XS', 'S', 'M', 'L', 'XL']
     }, {
         art: 12345678908,
@@ -59,8 +59,8 @@ var data =
         sub_category: 'outerwear',
         name: 'm outerwear 3',
         description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
-        price: 34900,
-        img: ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg'],
+        price: 14200,
+        img: ['img/img5.jpg', 'img/img9.jpg', 'img/img5.jpg', 'img/img6.jpg'],
         sizes: ['XS', 'S', 'M', 'L', 'XL']
     }, {
         art: 12345678909,
@@ -68,8 +68,8 @@ var data =
         sub_category: 'outerwear',
         name: 'm outerwear 4',
         description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
-        price: 79400,
-        img: ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg'],
+        price: 25800,
+        img: ['img/img5.jpg', 'img/img3.jpg', 'img/img3.jpg', 'img/img1.jpg'],
         sizes: ['XS', 'S', 'M', 'L', 'XL']
     }, {
         art: 12345678910,
@@ -77,8 +77,8 @@ var data =
         sub_category: 'tshirt',
         name: 'm tshirt 1',
         description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
-        price: 23800,
-        img: ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg'],
+        price: 29100,
+        img: ['img/img9.jpg', 'img/img2.jpg', 'img/img5.jpg', 'img/img5.jpg'],
         sizes: ['XS', 'S', 'M', 'L', 'XL']
     }, {
         art: 12345678911,
@@ -86,8 +86,8 @@ var data =
         sub_category: 'tshirt',
         name: 'm tshirt 2',
         description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
-        price: 81100,
-        img: ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg'],
+        price: 53700,
+        img: ['img/img2.jpg', 'img/img9.jpg', 'img/img6.jpg', 'img/img5.jpg'],
         sizes: ['XS', 'S', 'M', 'L', 'XL']
     }, {
         art: 12345678912,
@@ -95,8 +95,8 @@ var data =
         sub_category: 'tshirt',
         name: 'm tshirt 3',
         description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
-        price: 68700,
-        img: ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg'],
+        price: 18700,
+        img: ['img/img7.jpg', 'img/img1.jpg', 'img/img4.jpg', 'img/img8.jpg'],
         sizes: ['XS', 'S', 'M', 'L', 'XL']
     }, {
         art: 12345678913,
@@ -104,8 +104,8 @@ var data =
         sub_category: 'tshirt',
         name: 'm tshirt 4',
         description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
-        price: 45200,
-        img: ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg'],
+        price: 62200,
+        img: ['img/img1.jpg', 'img/img8.jpg', 'img/img1.jpg', 'img/img6.jpg'],
         sizes: ['XS', 'S', 'M', 'L', 'XL']
     }, {
         art: 12345678914,
@@ -113,8 +113,8 @@ var data =
         sub_category: 'coat',
         name: 'w coat 1',
         description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
-        price: 75500,
-        img: ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg'],
+        price: 19600,
+        img: ['img/img5.jpg', 'img/img2.jpg', 'img/img8.jpg', 'img/img4.jpg'],
         sizes: ['XS', 'S', 'M', 'L', 'XL']
     }, {
         art: 12345678915,
@@ -122,8 +122,8 @@ var data =
         sub_category: 'coat',
         name: 'w coat 2',
         description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
-        price: 18500,
-        img: ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg'],
+        price: 33600,
+        img: ['img/img1.jpg', 'img/img3.jpg', 'img/img4.jpg', 'img/img2.jpg'],
         sizes: ['XS', 'S', 'M', 'L', 'XL']
     }, {
         art: 12345678916,
@@ -131,8 +131,8 @@ var data =
         sub_category: 'coat',
         name: 'w coat 3',
         description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
-        price: 8300,
-        img: ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg'],
+        price: 99500,
+        img: ['img/img4.jpg', 'img/img4.jpg', 'img/img6.jpg', 'img/img2.jpg'],
         sizes: ['XS', 'S', 'M', 'L', 'XL']
     }, {
         art: 12345678917,
@@ -140,8 +140,8 @@ var data =
         sub_category: 'coat',
         name: 'w coat 4',
         description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
-        price: 1100,
-        img: ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg'],
+        price: 26900,
+        img: ['img/img7.jpg', 'img/img5.jpg', 'img/img7.jpg', 'img/img3.jpg'],
         sizes: ['XS', 'S', 'M', 'L', 'XL']
     }, {
         art: 12345678918,
@@ -149,8 +149,8 @@ var data =
         sub_category: 'outerwear',
         name: 'w outerwear 1',
         description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
-        price: 27100,
-        img: ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg'],
+        price: 35500,
+        img: ['img/img9.jpg', 'img/img3.jpg', 'img/img8.jpg', 'img/img5.jpg'],
         sizes: ['XS', 'S', 'M', 'L', 'XL']
     }, {
         art: 12345678919,
@@ -158,8 +158,8 @@ var data =
         sub_category: 'outerwear',
         name: 'w outerwear 2',
         description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
-        price: 74000,
-        img: ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg'],
+        price: 73400,
+        img: ['img/img3.jpg', 'img/img6.jpg', 'img/img4.jpg', 'img/img5.jpg'],
         sizes: ['XS', 'S', 'M', 'L', 'XL']
     }, {
         art: 12345678920,
@@ -167,8 +167,8 @@ var data =
         sub_category: 'outerwear',
         name: 'w outerwear 3',
         description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
-        price: 16500,
-        img: ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg'],
+        price: 76900,
+        img: ['img/img5.jpg', 'img/img5.jpg', 'img/img1.jpg', 'img/img5.jpg'],
         sizes: ['XS', 'S', 'M', 'L', 'XL']
     }, {
         art: 12345678921,
@@ -176,8 +176,8 @@ var data =
         sub_category: 'outerwear',
         name: 'w outerwear 4',
         description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
-        price: 75500,
-        img: ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg'],
+        price: 47500,
+        img: ['img/img5.jpg', 'img/img8.jpg', 'img/img8.jpg', 'img/img1.jpg'],
         sizes: ['XS', 'S', 'M', 'L', 'XL']
     }, {
         art: 12345678922,
@@ -185,8 +185,8 @@ var data =
         sub_category: 'tshirt',
         name: 'w tshirt 1',
         description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
-        price: 53600,
-        img: ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg'],
+        price: 17000,
+        img: ['img/img2.jpg', 'img/img6.jpg', 'img/img6.jpg', 'img/img9.jpg'],
         sizes: ['XS', 'S', 'M', 'L', 'XL']
     }, {
         art: 12345678923,
@@ -194,8 +194,8 @@ var data =
         sub_category: 'tshirt',
         name: 'w tshirt 2',
         description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
-        price: 96400,
-        img: ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg'],
+        price: 87300,
+        img: ['img/img2.jpg', 'img/img6.jpg', 'img/img9.jpg', 'img/img3.jpg'],
         sizes: ['XS', 'S', 'M', 'L', 'XL']
     }, {
         art: 12345678924,
@@ -203,8 +203,8 @@ var data =
         sub_category: 'tshirt',
         name: 'w tshirt 3',
         description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
-        price: 67900,
-        img: ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg'],
+        price: 38000,
+        img: ['img/img9.jpg', 'img/img1.jpg', 'img/img3.jpg', 'img/img6.jpg'],
         sizes: ['XS', 'S', 'M', 'L', 'XL']
     }, {
         art: 12345678925,
@@ -212,8 +212,8 @@ var data =
         sub_category: 'tshirt',
         name: 'w tshirt 4',
         description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
-        price: 52500,
-        img: ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg'],
+        price: 40200,
+        img: ['img/img4.jpg', 'img/img6.jpg', 'img/img5.jpg', 'img/img2.jpg'],
         sizes: ['XS', 'S', 'M', 'L', 'XL']
     }, {
         art: 12345678926,
@@ -221,8 +221,8 @@ var data =
         sub_category: 'coat',
         name: 'k coat 1',
         description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
-        price: 96700,
-        img: ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg'],
+        price: 92800,
+        img: ['img/img4.jpg', 'img/img6.jpg', 'img/img8.jpg', 'img/img2.jpg'],
         sizes: ['XS', 'S', 'M', 'L', 'XL']
     }, {
         art: 12345678927,
@@ -230,8 +230,8 @@ var data =
         sub_category: 'coat',
         name: 'k coat 2',
         description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
-        price: 96500,
-        img: ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg'],
+        price: 52100,
+        img: ['img/img4.jpg', 'img/img8.jpg', 'img/img1.jpg', 'img/img8.jpg'],
         sizes: ['XS', 'S', 'M', 'L', 'XL']
     }, {
         art: 12345678928,
@@ -239,8 +239,8 @@ var data =
         sub_category: 'coat',
         name: 'k coat 3',
         description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
-        price: 6600,
-        img: ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg'],
+        price: 13400,
+        img: ['img/img5.jpg', 'img/img3.jpg', 'img/img5.jpg', 'img/img5.jpg'],
         sizes: ['XS', 'S', 'M', 'L', 'XL']
     }, {
         art: 12345678929,
@@ -248,8 +248,8 @@ var data =
         sub_category: 'coat',
         name: 'k coat 4',
         description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
-        price: 33400,
-        img: ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg'],
+        price: 48600,
+        img: ['img/img4.jpg', 'img/img7.jpg', 'img/img9.jpg', 'img/img8.jpg'],
         sizes: ['XS', 'S', 'M', 'L', 'XL']
     }, {
         art: 12345678930,
@@ -257,8 +257,8 @@ var data =
         sub_category: 'outerwear',
         name: 'k outerwear 1',
         description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
-        price: 9500,
-        img: ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg'],
+        price: 17200,
+        img: ['img/img5.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img8.jpg'],
         sizes: ['XS', 'S', 'M', 'L', 'XL']
     }, {
         art: 12345678931,
@@ -266,8 +266,8 @@ var data =
         sub_category: 'outerwear',
         name: 'k outerwear 2',
         description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
-        price: 63300,
-        img: ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg'],
+        price: 26600,
+        img: ['img/img3.jpg', 'img/img9.jpg', 'img/img5.jpg', 'img/img6.jpg'],
         sizes: ['XS', 'S', 'M', 'L', 'XL']
     }, {
         art: 12345678932,
@@ -275,8 +275,8 @@ var data =
         sub_category: 'outerwear',
         name: 'k outerwear 3',
         description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
-        price: 5000,
-        img: ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg'],
+        price: 88300,
+        img: ['img/img4.jpg', 'img/img5.jpg', 'img/img4.jpg', 'img/img3.jpg'],
         sizes: ['XS', 'S', 'M', 'L', 'XL']
     }, {
         art: 12345678933,
@@ -284,8 +284,8 @@ var data =
         sub_category: 'outerwear',
         name: 'k outerwear 4',
         description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
-        price: 12900,
-        img: ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg'],
+        price: 70400,
+        img: ['img/img1.jpg', 'img/img7.jpg', 'img/img5.jpg', 'img/img2.jpg'],
         sizes: ['XS', 'S', 'M', 'L', 'XL']
     }, {
         art: 12345678934,
@@ -293,8 +293,8 @@ var data =
         sub_category: 'tshirt',
         name: 'k tshirt 1',
         description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
-        price: 44600,
-        img: ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg'],
+        price: 97900,
+        img: ['img/img1.jpg', 'img/img5.jpg', 'img/img7.jpg', 'img/img7.jpg'],
         sizes: ['XS', 'S', 'M', 'L', 'XL']
     }, {
         art: 12345678935,
@@ -302,8 +302,8 @@ var data =
         sub_category: 'tshirt',
         name: 'k tshirt 2',
         description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
-        price: 19800,
-        img: ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg'],
+        price: 50200,
+        img: ['img/img6.jpg', 'img/img1.jpg', 'img/img1.jpg', 'img/img4.jpg'],
         sizes: ['XS', 'S', 'M', 'L', 'XL']
     }, {
         art: 12345678936,
@@ -311,8 +311,8 @@ var data =
         sub_category: 'tshirt',
         name: 'k tshirt 3',
         description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
-        price: 19100,
-        img: ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg'],
+        price: 55800,
+        img: ['img/img8.jpg', 'img/img5.jpg', 'img/img7.jpg', 'img/img2.jpg'],
         sizes: ['XS', 'S', 'M', 'L', 'XL']
     }, {
         art: 12345678937,
@@ -320,8 +320,8 @@ var data =
         sub_category: 'tshirt',
         name: 'k tshirt 4',
         description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
-        price: 88300,
-        img: ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg'],
+        price: 35500,
+        img: ['img/img1.jpg', 'img/img3.jpg', 'img/img1.jpg', 'img/img9.jpg'],
         sizes: ['XS', 'S', 'M', 'L', 'XL']
     }, {
         art: 12345678938,
@@ -329,8 +329,8 @@ var data =
         sub_category: 'coat',
         name: 'cs coat 1',
         description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
-        price: 48000,
-        img: ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg'],
+        price: 84600,
+        img: ['img/img1.jpg', 'img/img1.jpg', 'img/img8.jpg', 'img/img7.jpg'],
         sizes: ['XS', 'S', 'M', 'L', 'XL']
     }, {
         art: 12345678939,
@@ -338,8 +338,8 @@ var data =
         sub_category: 'coat',
         name: 'cs coat 2',
         description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
-        price: 50300,
-        img: ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg'],
+        price: 78700,
+        img: ['img/img4.jpg', 'img/img7.jpg', 'img/img8.jpg', 'img/img3.jpg'],
         sizes: ['XS', 'S', 'M', 'L', 'XL']
     }, {
         art: 12345678940,
@@ -347,8 +347,8 @@ var data =
         sub_category: 'coat',
         name: 'cs coat 3',
         description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
-        price: 95400,
-        img: ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg'],
+        price: 41800,
+        img: ['img/img2.jpg', 'img/img7.jpg', 'img/img1.jpg', 'img/img9.jpg'],
         sizes: ['XS', 'S', 'M', 'L', 'XL']
     }, {
         art: 12345678941,
@@ -356,8 +356,8 @@ var data =
         sub_category: 'coat',
         name: 'cs coat 4',
         description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
-        price: 70200,
-        img: ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg'],
+        price: 10600,
+        img: ['img/img9.jpg', 'img/img2.jpg', 'img/img9.jpg', 'img/img5.jpg'],
         sizes: ['XS', 'S', 'M', 'L', 'XL']
     }, {
         art: 12345678942,
@@ -365,8 +365,8 @@ var data =
         sub_category: 'outerwear',
         name: 'cs outerwear 1',
         description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
-        price: 53400,
-        img: ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg'],
+        price: 62500,
+        img: ['img/img5.jpg', 'img/img6.jpg', 'img/img8.jpg', 'img/img5.jpg'],
         sizes: ['XS', 'S', 'M', 'L', 'XL']
     }, {
         art: 12345678943,
@@ -374,8 +374,8 @@ var data =
         sub_category: 'outerwear',
         name: 'cs outerwear 2',
         description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
-        price: 12600,
-        img: ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg'],
+        price: 37600,
+        img: ['img/img1.jpg', 'img/img4.jpg', 'img/img8.jpg', 'img/img1.jpg'],
         sizes: ['XS', 'S', 'M', 'L', 'XL']
     }, {
         art: 12345678944,
@@ -383,8 +383,8 @@ var data =
         sub_category: 'outerwear',
         name: 'cs outerwear 3',
         description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
-        price: 79200,
-        img: ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg'],
+        price: 19500,
+        img: ['img/img9.jpg', 'img/img1.jpg', 'img/img6.jpg', 'img/img9.jpg'],
         sizes: ['XS', 'S', 'M', 'L', 'XL']
     }, {
         art: 12345678945,
@@ -392,8 +392,8 @@ var data =
         sub_category: 'outerwear',
         name: 'cs outerwear 4',
         description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
-        price: 34600,
-        img: ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg'],
+        price: 64600,
+        img: ['img/img4.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img5.jpg'],
         sizes: ['XS', 'S', 'M', 'L', 'XL']
     }, {
         art: 12345678946,
@@ -401,8 +401,8 @@ var data =
         sub_category: 'tshirt',
         name: 'cs tshirt 1',
         description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
-        price: 5100,
-        img: ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg'],
+        price: 91900,
+        img: ['img/img3.jpg', 'img/img4.jpg', 'img/img8.jpg', 'img/img8.jpg'],
         sizes: ['XS', 'S', 'M', 'L', 'XL']
     }, {
         art: 12345678947,
@@ -410,8 +410,8 @@ var data =
         sub_category: 'tshirt',
         name: 'cs tshirt 2',
         description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
-        price: 80900,
-        img: ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg'],
+        price: 3800,
+        img: ['img/img5.jpg', 'img/img3.jpg', 'img/img4.jpg', 'img/img1.jpg'],
         sizes: ['XS', 'S', 'M', 'L', 'XL']
     }, {
         art: 12345678948,
@@ -419,8 +419,8 @@ var data =
         sub_category: 'tshirt',
         name: 'cs tshirt 3',
         description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
-        price: 16600,
-        img: ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg'],
+        price: 62300,
+        img: ['img/img7.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img5.jpg'],
         sizes: ['XS', 'S', 'M', 'L', 'XL']
     }, {
         art: 12345678949,
@@ -428,8 +428,8 @@ var data =
         sub_category: 'tshirt',
         name: 'cs tshirt 4',
         description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
-        price: 63000,
-        img: ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg'],
+        price: 81600,
+        img: ['img/img5.jpg', 'img/img9.jpg', 'img/img7.jpg', 'img/img8.jpg'],
         sizes: ['XS', 'S', 'M', 'L', 'XL']
     }];
 localStorage.setItem('full_data', JSON.stringify(data));
