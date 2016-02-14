@@ -32,7 +32,27 @@ function loadDataFromArt(art) {
     var clothes = JSON.parse(localStorage['full_data']).filter(function (item) {
         return item.art == art;
     });
-    selectedItem = clothes[0];
+    var selectedItem = clothes[0];
+
+    var breadcrumbs = $('.breadcrumb');
+    var link = '<a href="index.html">home</a> / <a href="category-all.html?category=';
+    switch (selectedItem.category) {
+        case 'w':
+            link += selectedItem.category + '"> women';
+            break;
+        case 'm':
+            link += selectedItem.category + '"> men';
+            break;
+        case 'k':
+            link += selectedItem.category + '"> kids';
+            break;
+        case 'cs':
+            link += selectedItem.category + '"> coming soon';
+            break;
+    }
+    link += '</a> / <a>'+ selectedItem.name+'</a>';
+    breadcrumbs.append(link);
+
     $('.large-img').attr('src', selectedItem.img[0]);
     $('#image1').attr('src', selectedItem.img[1]);
     $('#image2').attr('src', selectedItem.img[2]);

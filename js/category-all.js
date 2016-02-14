@@ -25,19 +25,19 @@ $(document).ready(function () {
 
 function loadDataForCategory(category) {
     var breadcrumbs = $('.breadcrumb');
-    var link = '<a>home</a> / <a>';
+    var link = '<a href="index.html">home</a> / <a href="category-all.html?category=';
     switch (category) {
         case 'w':
-            link += 'women';
+            link += category + '"> women';
             break;
         case 'm':
-            link += 'men';
+            link += category + '"> men';
             break;
         case 'k':
-            link += 'kids';
+            link += category + '"> kids';
             break;
         case 'cs':
-            link += 'coming soon';
+            link += category + '"> coming soon';
             break;
     }
     link += '</a>';

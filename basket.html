@@ -8,16 +8,15 @@
     <link rel="stylesheet" href="fonts/css/font-awesome.min.css">
     <script src="js/common/jquery-2.2.0.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/basket.js"></script>
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 </head>
 <body>
 <div id=wrapper>
-    <div id="header">
-
-    </div>
-    <div class="breadcrumb"><a>home</a> / <a>men</a> / <a>shoes</a> / Floral Plimsoll</div>
+    <div id="header"></div>
+    <div class="breadcrumb"><a href="index.html">home</a> / <a href="basket.html">basket</a></div>
     <h2>Your Shopping Bag</h2>
     <p class="subheader2">Items reserved for limited time only</p>
     <hr>
@@ -39,7 +38,7 @@
     </div>
 
     <div class="commonButton">ORDER NOW</div>
-    <div id="continueShopping"><a>Continue Shopping</a></div>
+    <div id="continueShopping" onclick="backToShopping()"><a>Continue Shopping</a></div>
     <div class="wrapForFooter"></div>
 </div>
 </div>

@@ -87,3 +87,7 @@ function calculateSum() {
     });
     $('#aggregateSum').html('Subtotal: <span>&euro;' + sum + '</span>');
 }
+
+function backToShopping (){
+    window.history.back();
+}
