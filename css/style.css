@@ -159,6 +159,7 @@ a:hover {
     border: none;
 }
 
+
 hr {
     display: block;
     height: 1px;
@@ -309,42 +310,71 @@ div#signup h2 + p {
     padding: 0;
 }
 
-div#signup + div#slider {
+#formForEmail form input[type="submit"]:hover {
+    background-color: #e67429;
+}
+
+
+div#signup + div.sliderContainer {
     margin-top: 75px;
 }
 
 /*slider*/
-#slider {
-    overflow: hidden;
-    width: 200px;
+.slider {
     height: 120px;
+    overflow: hidden;
+    position: relative; /* for overflow: hidden to work in IE7 */
+    margin: 0 auto;
 }
 
-#slider ul {
+.slider ul {
     position: relative;
-    -webkit-transition: 0.5s left;
-    -moz-transition: 0.5s left;
-    -ms-transition: 0.5s left;
-    -o-transition: 0.5s left;
+    /*-webkit-transition: .5s left;*/
+    /*-moz-transition: .5s left;*/
+    /*-ms-transition: .5s left;*/
+    /*-o-transition: .5s left;*/
+
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-#slider > ul > li {
-    margin: 0;
-    padding: 0;
+.slider > ul > li {
     float: left;
     width: 200px;
     height: 120px;
-    background: #ccc;
+    display: block;
+    background-color: magenta;
+    text-align: center;
 }
 
-#prev #next {
+.slider ul li img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.slider ul li div {
+    height: inherit;
+    width: inherit;
+    position: absolute;
+}
+
+.buttonNext, .buttonPrev {
     height: 120px;
-    width: 10px;
-    background-color: #f68236;
-    z-index: 10;
+    width: 20px;
+    background-color: aqua;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.5;
+}
+
+.buttonNext {
+    right: 0;
+    bottom: 0;
+}
+
+.sliderContainer {
+    position: relative;
 }
 
 .footer {
@@ -461,7 +491,7 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
 
 }
 
-.pictureOfClothes + h3 {
+.product h3 {
     margin-top: 20px
 }
 
@@ -478,7 +508,7 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
 #chosenProduct {
     border: solid 1px black;
     width: 350px;
-    height: 250px;
+    height: 265px;
     margin: auto;
     text-align: center;position: relative;
 }
@@ -487,7 +517,7 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
     border: solid 1px black;
     width: 55px;
     height: 55px;
-    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .productImage {
@@ -498,8 +528,8 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
 
 .miniPictures {
     position: absolute;
-    right: 10px;
-    bottom: 10px;
+    right: 0;
+    bottom: 0;
 }
 
 .crop-img{
@@ -515,7 +545,7 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
 }
 
 #chosenProduct + h2 {
-    margin-top: 20px
+    margin-top: 75px;
 }
 
 .articleNumber {
@@ -582,6 +612,10 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
     color: white;
     margin-top: 40px;
     font-size: 19px
+}
+
+.commonButton:hover {
+    background-color: #e67429;
 }
 
 .commonButton + .wrapForFooter {
@@ -771,16 +805,21 @@ input[type=number]::-webkit-outer-spin-button {
     /*pdp*/
     #chosenProduct {
         width: 375px;
-        padding-top: 75px;
+        height: 300px;
     }
 
     .miniPicture {
         width: 60px;
         height: 60px;
+
+    }
+
+    .miniPictures{
+        bottom: 18px;
     }
 
     #chosenProduct + h2 {
-        margin-top: 30px
+        margin-top: 55px;
     }
 
     .articleNumber {
@@ -869,6 +908,10 @@ input[type=number]::-webkit-outer-spin-button {
         margin: auto;
         text-align: center;
         top: 50%;
+    }
+
+    .whiteButton:hover {
+        background-color: #e5e5e5;
     }
 
     .firstHr {
@@ -1044,7 +1087,7 @@ input[type=number]::-webkit-outer-spin-button {
         margin-top: 30px;
     }
 
-    p + #slider {
+    p + .sliderContainer {
         margin-top: 45px;
     }
 
@@ -1115,7 +1158,10 @@ input[type=number]::-webkit-outer-spin-button {
         margin-top: 90px;
     }
 
-    hr + #slider {
+
+
+
+    hr + .sliderContainer {
         margin-top: 25px;
     }
 
