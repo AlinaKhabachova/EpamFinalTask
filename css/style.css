@@ -568,6 +568,10 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
     margin-right: 10px;
 }
 
+.selectedSize {
+    background-color: #a3a3a3;
+}
+
 .commonButton {
     text-align: center;
     padding: 16px 0;

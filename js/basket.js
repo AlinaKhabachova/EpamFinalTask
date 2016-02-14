@@ -1,58 +1,83 @@
-function showBasket() {
-    var basket = document.getElementById("basket");
-    basket.innerHTML = "";
-    var item = document.createElement('div');
-    var picture = document.createElement('div');
-    picture.className = "pictureOfItem";
-    var removeItem = document.createElement('div');
-    removeItem.className = "deleteItem";
-    var name = document.createElement('h3');
+var basket = [];
+$(document).ready(function () {
+    if (localStorage['basket'] === undefined || localStorage['basket'] === [] || localStorage['basket'] === '') {
+        localStorage['basket'] = [];
+        basket = [];
+    } else {
+        basket = JSON.parse((localStorage['basket']));
+    }
 
+    initBasket();
+});
 
-//<h3>Floral Plimsoll (1st)</h3>
-//    <p>Ref. 2514/302</p>
-//    <p>Black</p>
-//    <p>39</p>
-//    <form>
-//    <input type="number" name="quantity" min="1" max="99" value="1">
-//        </form>
-//        <p class="sum">&euro;99.95</p>
+function initBasket() {
+    var basketContainer = $('#basket');
+    var sum = 0;
+    basket.forEach(function (item) {
+        var newBasketItem = document.createElement('div');
+        newBasketItem.className = 'item';
+
+        var pictureContainer = document.createElement('div');
+        pictureContainer.className = 'pictureOfItem';
+        var picture = document.createElement('img');
+        picture.className = 'large-img';
+        picture.setAttribute('src', item.img[0]);
+        pictureContainer.appendChild(picture);
+        var deleteIconContainer = document.createElement('div');
+        deleteIconContainer.className = 'deleteItem';
+        var deleteIcon = document.createElement('i');
+        deleteIcon.setAttribute('class', 'fa fa-times');
+        deleteIconContainer.appendChild(deleteIcon);
+        var name = document.createElement('h3');
+        name.innerHTML = item.name;
+        var ref = document.createElement('p');
+        ref.innerHTML = item.art;
+        var color = document.createElement('p');
+        color.innerHTML = 'One color';
+        var size = document.createElement('p');
+        size.innerHTML = item.size;
+        var form = document.createElement('form');
+        var count = document.createElement('input');
+        count.setAttribute('type', 'number');
+        count.setAttribute('name', 'quantity');
+        count.setAttribute('min', '1');
+        count.setAttribute('max', '9');
+        count.setAttribute('value', item.count);
+        $(count).bind('change', function () {
+            var newCount = $(this).val();
+            item.count = newCount;
+            calculateSum();
+        });
+        form.appendChild(count);
+        var priceContainer = document.createElement('p');
+        priceContainer.className = 'sum';
+        var price = (item.price * item.count / 100);
+        sum += price;
+        priceContainer.innerHTML = '&euro;' + price.toString();
+
+        newBasketItem.appendChild(pictureContainer);
+        newBasketItem.appendChild(deleteIconContainer);
+        newBasketItem.appendChild(name);
+        newBasketItem.appendChild(ref);
+        newBasketItem.appendChild(color);
+        newBasketItem.appendChild(size);
+        newBasketItem.appendChild(form);
+        newBasketItem.appendChild(priceContainer);
+
+        basketContainer.append(document.createElement('hr'));
+        basketContainer.append(newBasketItem);
+    });
+    basketContainer.append(document.createElement('hr'));
+    var aggregateSum = document.createElement('div');
+    aggregateSum.id = 'aggregateSum';
+    basketContainer.append(aggregateSum);
+    calculateSum();
 }
 
-localStorage['basket'] = [
-        {
-            ref : "2514/302",
-            collor: "black",
-            name: "name",
-            price: 20,
-            size: 32,
-            count: 1
-        },
-        {
-            ref : "2514/302",
-            collor: "white",
-            name: "name 2",
-            price: 30,
-            size: 40,
-            count: 2
-        }
-    ];
-
-localStorage['data'] = [
-    {
-        ref : "2514/302",
-        collor: "black",
-        name: "name",
-        price: 20,
-        size: [32],
-        imgs : []
-    },
-    {
-        ref : "2514/302",
-        collor: "white",
-        name: "name 2",
-        price: 30,
-        size: 40,
-        count: 2
-    }
-];
+function calculateSum() {
+    var sum = 0;
+    basket.forEach(function (item) {
+        sum += item.price * item.count / 100;
+    });
+    $('#aggregateSum').html('Subtotal: <span>&euro;' + sum + '</span>');
+}
