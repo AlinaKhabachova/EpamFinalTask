@@ -8,13 +8,13 @@ Slider.prototype = {
         this.li = this.ul.children;
 
         // make <ul> as large as all <li>’s
-        this.ul.style.width = (this.li[0].clientWidth * this.li.length) + 'px';
+        this.ul.style.width = ((this.li[0].clientWidth + 2) * this.li.length) + 'px';
 
         this.currentShift = 0;
     },
 
     goTo: function (goToNext) {
-        var shift = this.currentShift + this.li[0].clientWidth * (goToNext ? 1 : -1);
+        var shift = this.currentShift + (this.li[0].clientWidth + 2) * (goToNext ? 1 : -1);
         var ulWidth = $(this.ul).width();
         var sliderWidth = $('.slider').width();
         if (sliderWidth + shift >= ulWidth) {

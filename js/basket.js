@@ -100,3 +100,8 @@ function calculateSum() {
 function backToShopping() {
     window.history.back();
 }
+
+function sendOrder(){
+    localStorage['basket']='';
+    window.location.href='thankYou.html';
+}

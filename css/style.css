@@ -338,11 +338,12 @@ div#signup + div.sliderContainer {
 
 .slider > ul > li {
     float: left;
-    width: 200px;
-    height: 120px;
+    width: 198px;
+    height: 118px;
     display: block;
-    background-color: magenta;
+    background-color: #e5e5e5;
     text-align: center;
+    border: 1px solid #606060;
 }
 
 .slider ul li img {
@@ -358,11 +359,20 @@ div#signup + div.sliderContainer {
 
 .buttonNext, .buttonPrev {
     height: 120px;
-    width: 20px;
-    background-color: aqua;
+    width: 40px;
+    background-color: white;
     position: absolute;
     z-index: 1;
     opacity: 0.5;
+    text-align: center;
+
+}
+
+.buttonNext > i, .buttonPrev > i {
+    font-size: 40px;
+    margin-top: 40px;
+    color: #988181;
+    opacity: 1;
 }
 
 .buttonNext {
@@ -828,6 +838,9 @@ input[type=number]::-webkit-outer-spin-button {
         margin-top: 120px;
     }
 
+    #forDesktopSlider {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -1071,6 +1084,10 @@ input[type=number]::-webkit-outer-spin-button {
         width: 170px;
     }
 
+    #forDesktopSlider {
+        display: block;
+    }
+
     .clothes + #forDesktopSlider {
         margin-top: 65px;
     }
@@ -1084,9 +1101,7 @@ input[type=number]::-webkit-outer-spin-button {
         margin-top: 45px;
     }
 
-    #forDesktopSlider {
-        display: block;
-    }
+
 
     #forDesktopSlider + .wrapForFooter {
         margin-top: 110px;
