@@ -34,12 +34,16 @@
     }
 
     function fixStyle() {
-        var ulWidth = $('.slider').children[0].width();
-        var sliderWidth = $('.slider').width();
-        if (this.currentShift + sliderWidth >= ulWidth) {
-            this.currentShift = ulWidth - sliderWidth;
+        var slider = $('.slider');
+        var ul = slider.children[0];
+        if (slider != undefined && ul != undefined) {
+            var ulWidth = ul.width();
+            var sliderWidth = slider.width();
+            if (this.currentShift + sliderWidth >= ulWidth) {
+                this.currentShift = ulWidth - sliderWidth;
+            }
+            this.ul.style.left = '-' + this.currentShift + 'px';
         }
-        this.ul.style.left = '-' + this.currentShift + 'px';
     }
 </script>
 <div class="buttonPrev"><i class="fa fa-chevron-left"></i></div>

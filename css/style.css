@@ -384,6 +384,10 @@ div#signup + div.sliderContainer {
     position: relative;
 }
 
+.subheader1 + #slider{
+    margin-top: 40px;
+}
+
 .footer {
     text-align: center;
     font-size: 18px;
