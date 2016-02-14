@@ -101,7 +101,8 @@ a {
     margin-top: 9px;
     float: right;
     width: 38px;
-    height: 38px;
+    height: 32px;
+    padding-top: 6px;
     color: #303030;
 }
 
@@ -189,10 +190,12 @@ hr {
 
 .headerLogo {
     width: 60px;
-    height: 55px;
+    height: 60px;
     margin-bottom: 15px;
-    background-color: #303030;
     display: inline-block;
+    background: #303030 url("../img/logo.png");
+    background-size: cover;
+
 }
 
 #menu {
@@ -244,7 +247,9 @@ ul {
     margin: auto;
     padding: 0;
     width: 375px;
-    background-color: #606060;
+    border: 1px solid #606060;
+    background-size: cover;
+    background-position: center center;
 }
 
 .gallery li a {
@@ -256,18 +261,23 @@ ul {
 
 .firstCell, .sixthCell {
     height: 230px;
+    background: #303030 url("../img/img1.jpg");
 }
 
 .secondCell, .seventhCell {
     height: 198px;
+    background: #303030 url("../img/img2.jpg");
+
 }
 
 .thirdCell {
     height: 150px;
+    background: #303030 url("../img/img3.jpg");
 }
 
 .fourthCell, .fifthCell, .eighthCell {
     height: 277px;
+    background: #303030 url("../img/img4.jpg");
 }
 
 div.gallery + div#signup {
@@ -959,8 +969,8 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     .gallery li {
-        width: 235px;
-        height: 235px;
+        width: 233px;
+        height: 233px;
         display: inline-block;
     }
 
@@ -1220,8 +1230,8 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     .gallery li {
-        width: 295px;
-        height: 235px;
+        width: 293px;
+        height: 233px;
         display: inline-block;
     }
 }
