@@ -28,14 +28,17 @@ function initBasket() {
         var deleteIcon = document.createElement('i');
         deleteIcon.setAttribute('class', 'fa fa-times');
         deleteIconContainer.appendChild(deleteIcon);
+
         $(deleteIconContainer).click(function () {
             newBasketItem.remove();
             basket = basket.filter(function (el) {
                 return el.art != item.art
             });
             calculateSum();
+            $('#basketCount').html(basket.length.toString());
             localStorage.setItem('basket', JSON.stringify(basket));
         });
+
         var name = document.createElement('h3');
         name.innerHTML = item.name;
         var ref = document.createElement('p');
@@ -51,13 +54,15 @@ function initBasket() {
         count.setAttribute('min', '1');
         count.setAttribute('max', '9');
         count.setAttribute('value', item.count);
+
         $(count).bind('change', function () {
             var newCount = $(this).val();
             item.count = newCount;
             localStorage.setItem('basket', JSON.stringify(basket));
             calculateSum();
-            priceContainer.innerHTML = '&euro;' + (item.price * item.count / 100).toString();
+            priceContainer.innerHTML = '&euro;' + (item.price * newCount / 100).toString();
         });
+
         form.appendChild(count);
         var priceContainer = document.createElement('p');
         priceContainer.className = 'sum';
