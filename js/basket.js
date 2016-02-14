@@ -101,7 +101,9 @@ function backToShopping() {
     window.history.back();
 }
 
-function sendOrder(){
-    localStorage['basket']='';
-    window.location.href='thankYou.html';
+function sendOrder() {
+    if (localStorage['basket'] != undefined && localStorage['basket'] != [] && localStorage['basket'] != '') {
+        localStorage['basket'] = '';
+        window.location.href = 'thankYou.html';
+    }
 }
