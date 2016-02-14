@@ -12,7 +12,6 @@ $(document).ready(function () {
 
 function initBasket() {
     var basketContainer = $('#basket');
-    var sum = 0;
     basket.forEach(function (item) {
         var newBasketItem = document.createElement('div');
         newBasketItem.className = 'item';
@@ -67,7 +66,6 @@ function initBasket() {
         var priceContainer = document.createElement('p');
         priceContainer.className = 'sum';
         var price = (item.price * item.count / 100);
-        sum += price;
         priceContainer.innerHTML = '&euro;' + price.toString();
 
         newBasketItem.appendChild(document.createElement('hr'));
