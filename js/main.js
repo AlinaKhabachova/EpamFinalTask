@@ -1,8 +1,8 @@
-$(function(){
+$(function () {
     $("#header").load("header.html");
 });
 
 
-$(function(){
+$(function () {
     $(".wrapForFooter").load("footer.html");
 });

@@ -1,6 +1,10 @@
 <div class="headerButtons">
-  <a href="index.html"> <div class="headerLogo"></div></a>
-   <a href="basket.html"> <div id="bag"><i class="fa fa-shopping-bag"></i> <span>Basket(0)</span></div> </a>
+    <a href="index.html">
+        <div class="headerLogo"></div>
+    </a>
+    <a href="basket.html">
+        <div id="bag"><i class="fa fa-shopping-bag"></i> <span>Basket(<span id="basketCount">0</span>)</span></div>
+    </a>
     <div id="search" class="icon" onclick="wideSearch()"><i class="fa fa-search"></i></div>
     <hr class="firstHr">
     <div id="menu">
@@ -11,3 +15,12 @@
     </div>
 </div>
 <hr>
+<script>
+    if (localStorage['basket'] === undefined || localStorage['basket'] === [] || localStorage['basket'] === '') {
+        localStorage['basket'] = [];
+        var count = 0;
+    } else {
+        var count = (JSON.parse((localStorage['basket']))).length;
+    }
+    $('#basketCount').html(count.toString())
+</script>
