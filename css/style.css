@@ -388,6 +388,10 @@ div#signup + div.sliderContainer {
     margin-top: 40px;
 }
 
+#slider {
+    position: relative;
+}
+
 .footer {
     text-align: center;
     font-size: 18px;
@@ -1174,6 +1178,11 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     hr + .sliderContainer {
+        margin-top: 25px;
+    }
+
+
+    hr + #slider {
         margin-top: 25px;
     }
 
