@@ -30,7 +30,11 @@ function initBasket() {
         deleteIconContainer.appendChild(deleteIcon);
         $(deleteIconContainer).click(function () {
             newBasketItem.remove();
-            basket = basket
+            basket = basket.filter(function (el) {
+                return el.art != item.art
+            });
+            calculateSum();
+            localStorage.setItem('basket', JSON.stringify(basket));
         });
         var name = document.createElement('h3');
         name.innerHTML = item.name;
@@ -88,6 +92,6 @@ function calculateSum() {
     $('#aggregateSum').html('Subtotal: <span>&euro;' + sum + '</span>');
 }
 
-function backToShopping (){
+function backToShopping() {
     window.history.back();
 }
