@@ -1,3 +1,7 @@
+$(function () {
+    $("#slider").load("slider.html");
+});
+
 //For IE
 if (!Array.prototype.filter) {
     Array.prototype.filter = function (fun /*, thisp*/) {

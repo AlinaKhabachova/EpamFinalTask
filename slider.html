@@ -1,49 +1,45 @@
 <script>
-    var Slider = function () {
-        this.initialize.apply(this, arguments)
-    };
-    Slider.prototype = {
+    function initSlider() {
+        this.ul = $('.slider').children()[0];
+        this.li = this.ul.children;
 
-        initialize: function (slider) {
-            this.ul = slider.children[0];
-            this.li = this.ul.children;
+        // make <ul> as large as all <li>’s
+        this.ul.style.width = ((this.li[0].clientWidth + 2) * this.li.length) + 'px';
 
-            // make <ul> as large as all <li>’s
-            this.ul.style.width = ((this.li[0].clientWidth + 2) * this.li.length) + 'px';
+        this.currentShift = 0;
+    }
 
-            this.currentShift = 0;
-        },
-
-        goTo: function (goToNext) {
-            var shift = this.currentShift + (this.li[0].clientWidth + 2) * (goToNext ? 1 : -1);
-            var ulWidth = $(this.ul).width();
-            var sliderWidth = $('.slider').width();
-            if (sliderWidth + shift >= ulWidth) {
-                shift = ulWidth - sliderWidth;
-            } else if (shift < 0) {
-                shift = 0;
-            }
-            this.ul.style.left = '-' + shift + 'px';
-
-            this.currentShift = shift;
-        },
-
-        goToPrev: function () {
-            this.goTo(false);
-        },
-
-        goToNext: function () {
-            this.goTo(true);
-        },
-
-        fixStyle: function () {
-            var ulWidth = $(this.ul).width();
-            var sliderWidth = $('.slider').width();
-            if (this.currentShift + sliderWidth >= ulWidth) {
-                this.currentShift = ulWidth - sliderWidth;
-            }
-            this.ul.style.left = '-' + this.currentShift + 'px';
+    function goTo(goToNext) {
+        var shift = this.currentShift + (this.li[0].clientWidth + 2) * (goToNext ? 1 : -1);
+        var ulWidth = $(this.ul).width();
+        var sliderWidth = $('.slider').width();
+        if (sliderWidth + shift >= ulWidth) {
+            shift = ulWidth - sliderWidth;
+        } else if (shift < 0) {
+            shift = 0;
         }
+        this.ul.style.left = '-' + shift + 'px';
+
+        this.currentShift = shift;
+    }
+
+
+    function goToPrev() {
+        goTo(false);
+    }
+
+
+    function goToNext() {
+        goTo(true);
+    }
+
+    function fixStyle() {
+        var ulWidth = $('.slider').children[0].width();
+        var sliderWidth = $('.slider').width();
+        if (this.currentShift + sliderWidth >= ulWidth) {
+            this.currentShift = ulWidth - sliderWidth;
+        }
+        this.ul.style.left = '-' + this.currentShift + 'px';
     }
 </script>
 <div class="buttonPrev"><i class="fa fa-chevron-left"></i></div>
@@ -80,19 +76,14 @@
 </div>
 <div class="buttonNext"><i class="fa fa-chevron-right"></i></div>
 <script>
-    var sliders = [];
-    $('.slider').each(function () {
-        sliders.push(new Slider(this));
-    });
+    initSlider();
     $(window).resize(function () {
-        sliders.forEach(function (slider) {
-            slider.fixStyle();
-        });
+        fixStyle();
     });
-    $('.buttonNext').click(function() {
-        sliders[0].goToNext();
+    $('.buttonNext').click(function () {
+        goToNext();
     });
-    $('.buttonPrev').click(function() {
-        sliders[0].goToPrev();
+    $('.buttonPrev').click(function () {
+        goToPrev();
     });
 </script>
