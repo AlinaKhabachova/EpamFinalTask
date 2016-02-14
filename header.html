@@ -16,7 +16,7 @@
 </div>
 <hr>
 <script>
-    if (localStorage['basket'] === undefined || localStorage['basket'] === [] || localStorage['basket'] === '') {
+    if (localStorage['basket'] === undefined || localStorage['basket'] === '[]' || localStorage['basket'] === '') {
         localStorage['basket'] = [];
         var count = 0;
     } else {

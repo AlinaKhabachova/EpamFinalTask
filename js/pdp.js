@@ -1,7 +1,7 @@
 var selectedItem;
 var basket;
 $(document).ready(function () {
-    if (localStorage['basket'] === undefined || localStorage['basket'] === [] || localStorage['basket'] === '') {
+    if (localStorage['basket'] === undefined || localStorage['basket'] === '[]' || localStorage['basket'] === '') {
         localStorage['basket'] = [];
         basket = [];
     } else {

@@ -1,6 +1,6 @@
 var basket = [];
 $(document).ready(function () {
-    if (localStorage['basket'] === undefined || localStorage['basket'] === [] || localStorage['basket'] === '') {
+    if (localStorage['basket'] === undefined || localStorage['basket'] === '[]' || localStorage['basket'] === '') {
         localStorage['basket'] = [];
         basket = [];
     } else {
@@ -102,7 +102,7 @@ function backToShopping() {
 }
 
 function sendOrder() {
-    if (localStorage['basket'] != undefined && localStorage['basket'] != [] && localStorage['basket'] != '') {
+    if (localStorage['basket'] != undefined && localStorage['basket'] != '[]' && localStorage['basket'] != '') {
         localStorage['basket'] = '';
         window.location.href = 'thankYou.html';
     }
