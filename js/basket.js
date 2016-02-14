@@ -28,6 +28,10 @@ function initBasket() {
         var deleteIcon = document.createElement('i');
         deleteIcon.setAttribute('class', 'fa fa-times');
         deleteIconContainer.appendChild(deleteIcon);
+        $(deleteIconContainer).click(function () {
+            newBasketItem.remove();
+            basket = basket
+        });
         var name = document.createElement('h3');
         name.innerHTML = item.name;
         var ref = document.createElement('p');
@@ -46,7 +50,9 @@ function initBasket() {
         $(count).bind('change', function () {
             var newCount = $(this).val();
             item.count = newCount;
+            localStorage.setItem('basket', JSON.stringify(basket));
             calculateSum();
+            priceContainer.innerHTML = '&euro;' + (item.price * item.count / 100).toString();
         });
         form.appendChild(count);
         var priceContainer = document.createElement('p');
@@ -55,6 +61,7 @@ function initBasket() {
         sum += price;
         priceContainer.innerHTML = '&euro;' + price.toString();
 
+        newBasketItem.appendChild(document.createElement('hr'));
         newBasketItem.appendChild(pictureContainer);
         newBasketItem.appendChild(deleteIconContainer);
         newBasketItem.appendChild(name);
@@ -64,7 +71,6 @@ function initBasket() {
         newBasketItem.appendChild(form);
         newBasketItem.appendChild(priceContainer);
 
-        basketContainer.append(document.createElement('hr'));
         basketContainer.append(newBasketItem);
     });
     basketContainer.append(document.createElement('hr'));
