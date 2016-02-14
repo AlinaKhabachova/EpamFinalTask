@@ -471,6 +471,11 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
     border: solid 1px #e5e5e5;
     width: 168px;
     height: 253px;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
 }
 
 .product {
@@ -1109,11 +1114,9 @@ input[type=number]::-webkit-outer-spin-button {
 
     /*pdp*/
     #chosenProduct {
-
         width: 945px;
-        height: 365px;
-
-        padding-top: 290px;
+        height: 755px;
+        padding-top: 0px;
     }
 
     .miniPicture {
