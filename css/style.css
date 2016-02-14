@@ -127,9 +127,8 @@ a:hover {
     text-decoration: underline;
 }
 
-
 #formForSearch {
-    margin: -3px auto -5px auto ;
+    margin: -3px auto -5px auto;
     width: 360px;
 }
 
@@ -158,7 +157,6 @@ a:hover {
     height: 39px;
     border: none;
 }
-
 
 hr {
     display: block;
@@ -314,7 +312,6 @@ div#signup h2 + p {
     background-color: #e67429;
 }
 
-
 div#signup + div.sliderContainer {
     margin-top: 75px;
 }
@@ -410,7 +407,6 @@ div#signup + div.sliderContainer {
     text-align: center;
     vertical-align: middle;
 }
-
 
 /*category-all*/
 
@@ -510,7 +506,8 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
     width: 350px;
     height: 265px;
     margin: auto;
-    text-align: center;position: relative;
+    text-align: center;
+    position: relative;
 }
 
 .miniPicture {
@@ -532,15 +529,15 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
     bottom: 0;
 }
 
-.crop-img{
-    max-height:150px;
-    max-width:100%;
+.crop-img {
+    max-height: 150px;
+    max-width: 100%;
 
 }
 
-.large-img{
-    max-width:100%;
-    max-height:100%;
+.large-img {
+    max-width: 100%;
+    max-height: 100%;
 
 }
 
@@ -555,7 +552,6 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
     color: #e5e5e5;
     font-family: "Lato", sans-serif;
     font-style: normal;
-
 }
 
 .price {
@@ -635,14 +631,14 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
 
 .pictureOfItem {
     border: solid 1px #e5e5e5;
-    width:100px;
-    height:100px;
-    float:left;
-    margin-right:19px;
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-right: 19px;
 }
 
 .deleteItem {
-    float:right;
+    float: right;
     margin-top: -2px;
 }
 
@@ -650,8 +646,8 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
     font-size: large;
 }
 
-.item h3{
-    letter-spacing:1px;
+.item h3 {
+    letter-spacing: 1px;
 }
 
 .item h3 span {
@@ -663,7 +659,7 @@ div.clothes .product:nth-child(2), div.clothes .product:nth-child(4) {
     line-height: 1.6;
 }
 
-#colorOfItem, #sizeOfItem  {
+#colorOfItem, #sizeOfItem {
     line-height: 1.5;
 }
 
@@ -686,7 +682,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .sum {
     text-align: right;
-    margin-bottom:19px;
+    margin-bottom: 19px;
 }
 
 #aggregateSum {
@@ -708,8 +704,6 @@ input[type=number]::-webkit-outer-spin-button {
     margin-top: 100px;
 }
 
-
-
 /*thank you*/
 
 #orderSent {
@@ -717,12 +711,12 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 #orderSent + p {
-    margin-top:30px;
-    text-align:center;
+    margin-top: 30px;
+    text-align: center;
 }
 
 .subheader1 + .wrapForFooter {
-    margin-top:50px;
+    margin-top: 50px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -814,7 +808,7 @@ input[type=number]::-webkit-outer-spin-button {
 
     }
 
-    .miniPictures{
+    .miniPictures {
         bottom: 18px;
     }
 
@@ -1022,9 +1016,8 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     /*body {*/
-        /*background-color: white;*/
+    /*background-color: white;*/
     /*}*/
-
     /*gallery-all*/
     .clothes {
         width: 945px;
@@ -1158,9 +1151,6 @@ input[type=number]::-webkit-outer-spin-button {
         margin-top: 90px;
     }
 
-
-
-
     hr + .sliderContainer {
         margin-top: 25px;
     }
@@ -1175,12 +1165,12 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     #orderSent + p {
-        margin-top:30px;
+        margin-top: 30px;
 
     }
 
     .subheader1 + .wrapForFooter {
-        margin-top:235px;
+        margin-top: 235px;
     }
 }
 
