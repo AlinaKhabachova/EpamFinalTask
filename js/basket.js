@@ -32,7 +32,7 @@ function initBasket() {
         $(deleteIconContainer).click(function () {
             newBasketItem.remove();
             basket = basket.filter(function (el) {
-                return el.art != item.art
+                return el.art != item.art || el.size != item.size
             });
             calculateSum();
             $('#basketCount').html(basket.length.toString());
