@@ -32,7 +32,7 @@ function loadDataFromArt(art) {
     var clothes = JSON.parse(localStorage['full_data']).filter(function (item) {
         return item.art == art;
     });
-    var selectedItem = clothes[0];
+    selectedItem = clothes[0];
 
     var breadcrumbs = $('.breadcrumb');
     var link = '<a href="index.html">home</a> / <a href="category-all.html?category=';
