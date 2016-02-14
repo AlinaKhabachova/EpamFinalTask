@@ -6,8 +6,9 @@
           rel="stylesheet"/>
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="fonts/css/font-awesome.min.css">
-    <script src="js/common/jquery-2.1.4.min.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/common/jquery-2.2.0.js"></script>
+    <script src="js/category-all.js"></script>
+    <script src="js/full_data.js"></script>
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -21,105 +22,43 @@
             <div id="search" class="icon" onclick="wideSearch()"><i class="fa fa-search"></i></div>
             <hr class="firstHr">
             <div id="menu">
-                <div><a href="">Woman</a></div>
-                <div><a href="">Men</a></div>
-                <div><a href="">Kids</a></div>
-                <div id="lastElementOfMenu"><a href="">Coming Soon</a></div>
+                <div><a href="category-all.html?category=w">Woman</a></div>
+                <div><a href="category-all.html?category=m">Men</a></div>
+                <div><a href="category-all.html?category=k">Kids</a></div>
+                <div id="lastElementOfMenu"><a href="category-all.html?category=cs">Coming Soon</a></div>
             </div>
         </div>
         <hr>
     </div>
-    <div class="breadcrumb"><a>home</a> / <a>men</a></div>
+    <div class="breadcrumb"></div>
     <h2>COATS</h2>
-    <div class="clothes">
-        <div class="product">
-            <div class="pictureOfClothes"></div>
-            <h3>Double-Layered Top</h3>
-            <p>666.99 $</p>
-        </div>
-        <div class="product">
-            <div class="pictureOfClothes"></div>
-            <h3>Double-Layered Top</h3>
-            <p>666.99 $</p>
-        </div>
-        <div class="product">
-            <div class="pictureOfClothes"></div>
-            <h3>Some Product Name</h3>
-            <p>666.99 $</p>
-        </div>
-        <div class="product">
-            <div class="pictureOfClothes"></div>
-            <h3>Some Product Name</h3>
-            <p>666.99 $</p>
-        </div>
-    </div>
+    <div class="clothes" id="coats_container"></div>
 
     <hr>
     <h2>OUTERWEAR</h2>
-    <div class="clothes">
-        <div class="product">
-            <div class="pictureOfClothes"></div>
-            <h3>Double-Layered Top</h3>
-            <p>666.99 $</p>
-        </div>
-        <div class="product">
-            <div class="pictureOfClothes"></div>
-            <h3>Double-Layered Top</h3>
-            <p>666.99 $</p>
-        </div>
-        <div class="product">
-            <div class="pictureOfClothes"></div>
-            <h3>Some Product Name</h3>
-            <p>666.99 $</p>
-        </div>
-        <div class="product">
-            <div class="pictureOfClothes"></div>
-            <h3>Some Product Name</h3>
-            <p>666.99 $</p>
-        </div>
-    </div>
+    <div class="clothes" id="outwear_container"></div>
+
     <hr>
     <h2>T-SHIRTS</h2>
-    <div class="clothes">
-        <div class="product">
-            <div class="pictureOfClothes"></div>
-            <h3>Double-Layered Top</h3>
-            <p>666.99 $</p>
-        </div>
-        <div class="product">
-            <div class="pictureOfClothes"></div>
-            <h3>Double-Layered Top</h3>
-            <p>666.99 $</p>
-        </div>
-        <div class="product">
-            <div class="pictureOfClothes"></div>
-            <h3>Some Product Name</h3>
-            <p>666.99 $</p>
-        </div>
-        <div class="product">
-            <div class="pictureOfClothes"></div>
-            <h3>Some Product Name</h3>
-            <p>666.99 $</p>
-        </div>
-    </div>
+    <div class="clothes" id="tshirts_container"></div>
+
     <div id="forDesktopSlider">
-    <hr>
-    <p class="subheader1">Check our lookbook</p>
-    <div id="slider">
-        <div id="prev"></div>
-        <ul>
-            <li>200x120</li>
-            <li>200x120</li>
-            <li>200x120</li>
-            <li>200x120</li>
-        </ul>
-        <div id="next"></div>
-    </div>
+        <hr>
+        <p class="subheader1">Check our lookbook</p>
+        <div id="slider">
+            <div id="prev"></div>
+            <ul>
+                <li>200x120</li>
+                <li>200x120</li>
+                <li>200x120</li>
+                <li>200x120</li>
+            </ul>
+            <div id="next"></div>
         </div>
+    </div>
     <div class="wrapForFooter withoutSlider">
         <hr>
         <div class="footer">
-
             <div id="footerCollection" class="footerFloat">
                 <h3>COLLECTION</h3>
                 <ul>
@@ -168,6 +107,7 @@
                     <div class="social icon"><i class="fa fa-instagram"></i></div>
                 </div>
             </div>
+            <div class="cleaner"></div>
         </div>
     </div>
 

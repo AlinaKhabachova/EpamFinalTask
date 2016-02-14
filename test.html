@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<style>
+    .slider {
+        height: 120px;
+        overflow: hidden;
+        position: relative; /* for overflow: hidden to work in IE7 */
+        margin: 0 auto;
+    }
+
+    .slider ul {
+        position: relative;
+        /*-webkit-transition: .5s left;*/
+        /*-moz-transition: .5s left;*/
+        /*-ms-transition: .5s left;*/
+        /*-o-transition: .5s left;*/
+
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .slider > ul > li {
+        float: left;
+        width: 200px;
+        height: 120px;
+        display: block;
+        background-color: magenta;
+        text-align: center;
+    }
+
+    .slider ul li img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .slider ul li div {
+        height: inherit;
+        width: inherit;
+        position: absolute;
+    }
+
+    .buttonNext, .buttonPrev {
+        height: 120px;
+        width: 20px;
+        background-color: aqua;
+        position: absolute;
+        z-index: 1;
+        opacity: 0.5;
+    }
+
+    .buttonNext {
+        right: 0;
+        bottom: 0;
+    }
+
+    .sliderContainer {
+        position: relative;
+    }
+</style>
+
+<script>
+    var Slider = function () {
+        this.initialize.apply(this, arguments)
+    };
+    Slider.prototype = {
+
+        initialize: function (slider) {
+            this.ul = slider.children[0];
+            this.li = this.ul.children;
+
+            // make <ul> as large as all <li>’s
+            this.ul.style.width = (this.li[0].clientWidth * this.li.length) + 'px';
+
+            this.currentShift = 0;
+        },
+
+        goTo: function (goToNext) {
+            var shift = this.currentShift + this.li[0].clientWidth * (goToNext ? 1 : -1);
+            var ulWidth = $(this.ul).width();
+            var sliderWidth = $('.slider').width();
+            if (sliderWidth + shift >= ulWidth) {
+                shift = ulWidth - sliderWidth;
+            } else if (shift < 0) {
+                shift = 0;
+            }
+            this.ul.style.left = '-' + shift + 'px';
+
+            this.currentShift = shift;
+        },
+
+        goToPrev: function () {
+            this.goTo(false);
+        },
+
+        goToNext: function () {
+            this.goTo(true);
+        },
+
+        fixStyle: function () {
+            var ulWidth = $(this.ul).width();
+            var sliderWidth = $('.slider').width();
+            if (this.currentShift + sliderWidth >= ulWidth) {
+                this.currentShift = ulWidth - sliderWidth;
+            }
+            this.ul.style.left = '-' + this.currentShift + 'px';
+        }
+    }
+</script>
+<div class="sliderContainer">
+    <div class="buttonPrev"><</div>
+    <div class="slider">
+        <ul>
+            <li>
+                <img src="img/img1.jpg">
+            </li>
+            <li>
+                <img src="img/img2.jpg">
+            </li>
+            <li>
+                <img src="img/img3.jpg">
+            </li>
+            <li>
+                <img src="img/img4.jpg">
+            </li>
+            <li>
+                <img src="img/img5.jpg">
+            </li>
+            <li>
+                <img src="img/img6.jpg">
+            </li>
+            <li>
+                <img src="img/img7.jpg">
+            </li>
+            <li>
+                <img src="img/img8.jpg">
+            </li>
+            <li>
+                <img src="img/img9.jpg">
+            </li>
+        </ul>
+    </div>
+    <div class="buttonNext">></div>
+</div>
+
+<script>
+    var sliders = [];
+    $('.slider').each(function () {
+        sliders.push(new Slider(this));
+    });
+    $(window).resize(function () {
+        sliders.forEach(function (slider) {
+            slider.fixStyle();
+        });
+    });
+    $('.buttonNext').click(function() {
+       sliders[0].goToNext();
+    });
+    $('.buttonPrev').click(function() {
+        sliders[0].goToPrev();
+    });
+</script>
+
+<div>
+    <ul>
+        <li>
+            <a href="javascript:sliders[0].goToPrev()">.goToPrev()</a>
+        </li>
+        <li>
+            <a href="javascript:sliders[0].goToNext()">.goToNext()</a>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
